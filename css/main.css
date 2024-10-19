@@ -1,0 +1,200 @@
+@import url(
+  http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600);
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+/* ส่วนของเมนูนำทาง (Navigation Bar) */
+.my-nav{
+    padding: 20px 0; /* ระยะห่างด้านบนและล่าง 20px */
+    background-color: rgb(54,63,72);
+}
+
+/* ส่วน Cover ใช้รูปภาพเป็นพื้นหลัง */
+.cover{
+  background-image: url("/images/room.jpg"); /* กำหนดรูปพื้นหลัง ใช้ URL("ที่อยู่ไฟล์รูป)")*/
+  background-size: cover; /* ทำให้รูปครอบคลุมพื้นที่ทั้งหมด background-size */
+  background-position: center; /* จัดวางรูปให้อยู่กึ่งกลาง background-position */
+  width: 100%; /* กำหนดความกว้าง */
+  height: 80vh; /* กำหนดความสูงหน้าจอขนาด 80% */
+}
+
+/* ส่วน ฟอร์มภายใน Cover */
+.my-form{
+  background-color: white;
+  padding: 50px 50px 50px; /* Padding บนล่าง  50px ซ้ายและขวา 50px 50px */
+  width: 400px; /* ความกว้างของฟอร์มขนาด 400px */
+}
+
+/* การจัดหัวข้อฟอร์ม */
+.my-form h2{
+  text-align: center;
+  margin-bottom: 30px; /* ระยะห่างด้านล่าง 30px */
+  color: rgb(128, 128, 128);
+  font-weight: bold; /* ปรับขนาดฟอนต์หนาเป็น bold font-weight*/
+}
+
+/* การจัดวางเนื้อหาใน Cover โดยใช้ Flexbox */
+.cover .container{
+  display: flex; /* กำหนดให้ container เป็น Flexbox */
+  align-items: center;  /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  justify-content: flex-start; /* จัดให้อยู่ทางซ้าย */
+  height: 100%; /* ความสูงเต็มพื้นที่ */
+}
+
+/* ปุ่มในฟอร์ม */
+.cover .my-form .btn{
+  width: 100%; /* ปุ่มมีความกว้างเต็มพื้นที่ฟอร์ม */
+}
+
+.benefit{
+  padding: 50px 0; /* Padding ด้านบนและล่าง 50px ซ้ายขวา 0*/
+}
+
+/* การจัดเลย์เอาท์แบบยืดหยุ่น (Flexbox) */
+.flex{
+  display: flex;
+  justify-content: space-around; /* จัดวางเนื้อหาให้ห่างกันเท่าๆ กัน */
+  align-items: center;
+}
+
+/* ส่วนของแต่ละ Flex Item */
+.flex-item {
+  flex: 1; /* Flex Item แต่ละอันขยายเต็มพื้นที่ */
+  display: flex; /* ใช้ Flexbox สำหรับจัดเนื้อหาภายใน */
+  align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  flex-direction: column; /* จัดวางเนื้อหาในแนวตั้ง */
+}
+
+.flex-item{
+  margin-bottom: 10px; /* ระยะห่างด้านล่าง 10px */
+}
+
+/* การจัดรูปแบบของข้อความ */
+.T1{
+  font-size: 24px;
+  color: rgb(128, 128, 128);
+  font-weight: bold;
+}
+
+.T2{
+  text-align: center;
+}
+
+.header img{
+  width: 60px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.title{
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(128, 128, 128);
+  text-align: center;
+}
+
+.T3{
+  font-size: 20px;
+  color: rgb(128, 128, 128);
+  text-align: center;
+}
+
+.blog{
+  background-color: rgb(247,247,247);
+  padding: 50px 0 0;
+}
+
+/* Container ของรายการในส่วน Blog */
+.list-container{
+  list-style: none;
+  padding: 30px 0;
+  display: flex;
+  flex-flow: row wrap; /* จัดรายการเป็นแถวและให้แถวห่อรอบเมื่อพื้นที่ไม่พอ */
+  justify-content: space-around;  /* กระจายรายการเท่าๆ กัน */
+}
+
+/* แต่ละรายการใน List Container */
+.list-container .list-item{
+  flex: 0 30%; /* แต่ละรายการมีขนาด 30% ของพื้นที่ */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* รูปภาพขนาด Thumbnail */
+.thumb img{
+  width: 100%;
+}
+
+/* การจัดสีหัวข้อ */
+.head_color{
+  font-size: 24px;
+  color: rgb(89, 163, 252);
+  margin-bottom: 0px;
+  padding: 15px 0; /* Padding ด้านบนและล่าง 15px */
+}
+
+/* ปุ่มสีแบบมีเส้นขอบ */
+.colored_button_div{
+  padding: 15px 0;
+  width: 100%;
+  border-radius: 30px; /* เส้นขอบโค้งมน 30px */
+  border: 1px solid rgb(89, 163, 252); /* เส้นขอบสีฟ้า */
+  color: rgb(89, 163, 252); /* สีข้อความเป็นสีฟ้า */
+}
+
+/* เมื่อโฮเวอร์บนปุ่ม ให้เปลี่ยนสีพื้นหลัง */
+.colored_button_div:hover {
+  background-color: rgb(89, 163, 252);
+  cursor: pointer; /* เปลี่ยนรูปแบบเคอร์เซอร์เป็น Pointer */
+}
+
+/* เมื่อโฮเวอร์ให้สีของลิงก์เปลี่ยนเป็นสีขาว */
+.colored_button_div:hover a{
+  color: white;
+}
+
+/* ลิงก์ในปุ่มสี */
+.colored_button{
+  text-decoration: none;  /* ยกเลิกการขีดเส้นใต้ลิงก์ */
+}
+
+.company{
+  padding: 40px 0 0; /* Padding ด้านบน 40px */
+}
+
+.flex-3{
+  flex: 2; /* Flex Item ขยายพื้นที่ 2 เท่า */
+}
+
+.flex-2{
+  flex: 2; /* Flex Item ขยายพื้นที่ 2 เท่า */
+}
+
+.flex-2 img{
+  width: 50%;
+  margin-right: 45%;
+}
+
+.points_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* กระจายเนื้อหาให้เท่ากัน */
+  margin-left: 45%;
+}
+
+.single_point_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.single_point_div .point_circle {
+  margin-right: 20px;
+}
+.single_point_text {
+  line-height: 2; /* ความสูงของบรรทัด 2 เท่าของฟอนต์ */
+  
+}
+
