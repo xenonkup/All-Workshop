@@ -13,7 +13,7 @@ body {
 
 /* ส่วน Cover ใช้รูปภาพเป็นพื้นหลัง */
 .cover{
-  background-image: url("/images/room.jpg"); /* กำหนดรูปพื้นหลัง ใช้ URL("ที่อยู่ไฟล์รูป)")*/
+  background-image: url("/Workshop page Villa/images/room.jpg"); /* กำหนดรูปพื้นหลัง ใช้ URL("ที่อยู่ไฟล์รูป)")*/
   background-size: cover; /* ทำให้รูปครอบคลุมพื้นที่ทั้งหมด background-size */
   background-position: center; /* จัดวางรูปให้อยู่กึ่งกลาง background-position */
   width: 100%; /* กำหนดความกว้าง */
